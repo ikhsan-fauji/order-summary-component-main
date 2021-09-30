@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 :root {
-    --bp-mobile: 375px;
+    --bp-mobile-s: 320px;
+    --bp-mobile-m: 375px;
+    --bp-mobile-l: 425px;
+    --bp-tablet: 768px;
+    --bp-laptop: 1024px;
     --bp-desktop: 1440px;
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
@@ -14,6 +18,10 @@
 
 .attribution {
     text-align: center;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    margin-top: 50px;
 }
 
 * {
@@ -38,7 +46,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 50px 15px;
     justify-content: center;
     height: 100vh;
 }
@@ -51,7 +59,8 @@ main::after {
     height: 100vh;
     content: "";
     z-index: -1;
-    opacity: 70%;
+    opacity: 80%;
+    top: 0;
 }
 
 .card {
@@ -59,6 +68,8 @@ main::after {
     overflow: hidden;
     background-color: #fff;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    max-width: var(--bp-mobile-m);
 }
 
 .banner {
@@ -97,6 +108,7 @@ main::after {
 
 .info h3 {
     margin: 0;
+    color: var(--dark-blue);
 }
 
 .info p {
@@ -113,6 +125,8 @@ main::after {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    display: flex;
+    align-items: center;
 }
 
 .buttons {
@@ -146,10 +160,5 @@ main::after {
         background-image: url('./images//pattern-background-desktop.svg') !important;
         background-repeat: no-repeat;
         background-position: top;
-    }
-
-    .card {
-        max-width: var(--bp-mobile) !important;
-        margin: 50px 0;
     }
 }
