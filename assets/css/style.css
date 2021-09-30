@@ -1,5 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg") !important;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  color: #7280a7;
+}
+
 body {
-  background-color: aqua;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+  justify-content: center;
+  height: 100vh;
+}
+
+main::after {
+  display: block;
+  background-color: #f5f7ff;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  content: "";
+  z-index: -1;
+  opacity: 80%;
+  top: 0;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  max-width: 375px;
+}
+.card .banner {
+  width: 100%;
+  height: 100%;
+}
+.card .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card .overview {
+  width: 100%;
+  padding: 18px;
+}
+.card .overview h2 {
+  color: #1f2f56;
+}
+.card .overview p {
+  padding: 10px 20px;
+}
+.card .payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f5f7ff;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+.card .payment .info h3 {
+  margin: 0;
+  color: #1f2f56;
+}
+.card .payment .info p {
+  padding: 0;
+}
+.card .payment .action a {
+  color: #3829e0;
+  text-decoration: none;
+}
+.card .payment .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.btn {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-proceed {
+  background: #3829e0;
+  color: #fff;
+  box-shadow: #26394d 0px 5px 15px -4px;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: #7280a7;
 }
 
 /*# sourceMappingURL=style.css.map */
