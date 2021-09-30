@@ -1,7 +1,6 @@
 @media screen and (min-width: 1024px) {
-    body {
+    body::after {
+        top: -95px !important;
         background-image: url('../images/pattern-background-desktop.svg') !important;
-        background-repeat: no-repeat;
-        background-position: top;
     }
 }
