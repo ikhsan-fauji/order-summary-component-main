@@ -73,7 +73,7 @@ main::after {
   width: 100%;
   padding: 18px;
 }
-.card .overview h2 {
+.card .overview h1 {
   color: #1f2f56;
 }
 .card .overview p {
@@ -88,7 +88,7 @@ main::after {
   border-radius: 5px;
   margin: 8px 0;
 }
-.card .payment .info h3 {
+.card .payment .info h2 {
   margin: 0;
   color: #1f2f56;
 }
