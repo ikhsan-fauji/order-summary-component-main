@@ -4,7 +4,7 @@
   "description": "![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./assets/sass/index.scss ./assets/css/style.css"
+    "sass": "sass --watch ./assets/sass/index.scss ./assets/css/style.css"
   },
   "keywords": [],
   "author": "",
