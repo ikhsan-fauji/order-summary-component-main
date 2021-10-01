@@ -3,4 +3,8 @@
         top: -95px !important;
         background-image: url('../images/pattern-background-desktop.svg') !important;
     }
+
+    .card {
+      max-width: $bp-mobile-l !important;
+    }
 }
